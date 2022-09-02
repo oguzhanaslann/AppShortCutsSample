@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AppShortCutsSample</string>
+    <string name="search">Search</string>
+    <string name="search_something">Search Something</string>
+    <string name="search_disabled">Search disabled</string>
 </resources>
