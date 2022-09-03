@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
     <shortcut
-        android:shortcutId="static_shortcut_sample"
-        android:enabled="true"
+        android:enabled="false"
         android:icon="@drawable/ic_baseline_search_24"
-        android:shortcutShortLabel="@string/search"
+        android:shortcutDisabledMessage="@string/search_disabled"
+        android:shortcutId="static_shortcut_sample"
         android:shortcutLongLabel="@string/search_something"
-        android:shortcutDisabledMessage="@string/search_disabled">
+        android:shortcutShortLabel="@string/search">
 
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetPackage="com.oguzhanaslann.appshortcutssample"
             android:targetClass="com.oguzhanaslann.appshortcutssample.SearchActivity"
-            />
+            android:targetPackage="com.oguzhanaslann.appshortcutssample">
+
+            <extra
+                android:name="shortcut_search_extra"
+                android:value="Search Text"/>
+
+        </intent>
         <categories android:name="android.shortcut.conversation" />
 
     </shortcut>
